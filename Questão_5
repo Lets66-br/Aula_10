@@ -1,0 +1,31 @@
+programa {
+  funcao inicio() {
+    inteiro n1, n2, n3
+
+    escreva("Digite o primeiro valor: ")
+    leia(n1)
+    escreva("Digite o segundo valor: ")
+    leia(n2)
+    escreva("Digite o terceiro valor: ")
+    leia(n3)
+
+    se(n1 < n2 e n2 < n3)
+    escreva("primeiro é ", n1, "\nsegundo é ", n2, "\nterceiro é ", n3)
+
+    se(n1 < n3 e n3 < n2)
+    escreva("primeiro é ", n1, "\nsegundo é ", n3, "\nterceiro é ", n2)
+
+    se(n2 < n1 e n1 < n3)
+    escreva("primeiro é ", n2, "\nsegundo é ", n1, "\nterceiro é ", n3)
+
+    se(n2 < n3 e n3 < n1)
+    escreva("primeiro é ", n2, "\nsegundo é ", n3, "\nterceiro é ", n1)
+
+    se(n3 < n1 e n1 < n2)
+    escreva("primeiro é ", n3, "\nsegundo é ", n1, "\nterceiro é ", n2)
+
+    se(n3 < n2 e n2 < n1)
+    escreva("primeiro é ", n3, "\nsegundo é ", n2, "\nterceiro é ", n1)
+
+  }
+}
