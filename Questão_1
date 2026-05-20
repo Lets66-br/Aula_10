@@ -1,0 +1,19 @@
+programa {
+  funcao inicio() {
+    inteiro n1, n2
+    inteiro trocav
+
+    escreva("Digite o primeiro número: ")
+    leia(n1)
+    escreva("Digite o segundo número: ")
+    leia(n2)
+
+    trocav = n1
+    n1 = n2
+    n2 = trocav
+    escreva("Valores trocados \n")
+    escreva("n1 =", n1, "\n")
+    escreva("n2 =", n2)
+    
+  }
+}
