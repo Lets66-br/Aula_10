@@ -1,0 +1,17 @@
+programa {
+  funcao inicio() {
+    inteiro n1, n2, resu, soma
+
+    escreva("Qual o valor do primeiro número: ")
+    leia(n1)
+    escreva("Qual o valor do segundo número: ")
+    leia(n2)
+
+    soma = n1 + n2
+    resu = soma * soma
+
+    escreva(resu)
+
+    
+  }
+}
