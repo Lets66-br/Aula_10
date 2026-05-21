@@ -1,0 +1,25 @@
+programa {
+  funcao inicio() {
+    cadeia nome
+    real media, n1, n2, n3
+
+    escreva("Digite seu nome:  \n")
+    leia(nome)
+    escreva("Digite sua nota em Português:  \n")
+    leia(n1)
+    escreva("Digite sua nota em Matemática:  \n")
+    leia(n2)
+    escreva("Digite sua nota de Conhecimentos Gerais:  \n")
+    leia(n3)
+
+    media = (n1 + n2 + n3) / 3
+    se(media > 7.0){
+      escreva("aprovado")
+    }
+    senao{
+      se(media < 5.0){
+        escreva("reprovado")
+      }
+    }
+  }
+}
