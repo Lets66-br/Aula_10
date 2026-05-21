@@ -1,0 +1,23 @@
+programa {
+  funcao inicio() {
+    cadeia senha
+    inteiro tentativas = 0
+
+    enquanto (tentativas < 3){
+      escreva("Digite a senha: ")
+      leia(senha)
+
+      se (senha == "2025"){
+        escreva("Acesso liberado")
+        pare
+      }
+      senao{
+        tentativas = tentativas + 1
+        escreva("Senha incorreta. Tentativas restantes: ", 3 - tentativas, "\n")
+      }
+    }
+    se (tentativas == 3){
+      escreva("Acesso bloqueado")
+    }
+  }
+}
