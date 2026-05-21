@@ -1,0 +1,43 @@
+programa {
+  funcao inicio() {
+    inteiro opcao = 0
+    real saldo = 1000.0
+    enquanto (opcao != 4)
+    {
+
+    escreva("\n1 - Valor saldo")
+    escreva("\n2 - Realizar depósito")
+    escreva("\n3 - Atendimento em andamento")
+    escreva("\n4 - Encerrar atendimento")
+    escreva("\nEscolha uma opção: ")
+    leia(opcao)
+    
+    escolha(opcao){
+      caso 1:
+      escreva("Seu saldo atual é: R$ ", saldo, "\n")
+      pare
+      
+
+      caso 2:
+      real valorDeposito
+			escreva("Digite o valor do depósito: ")
+			leia(valorDeposito)
+			saldo = saldo + valorDeposito
+			escreva("Depósito realizado com sucesso!\n")
+			pare
+
+      caso 3:
+      escreva("Atendimento em andamento\n")
+      pare
+
+      caso 4:
+      escreva("Encerrando atendimento...\n")
+      pare
+
+      caso contrario:
+      escreva("Opção inválida, tente novamente.\n")
+
+    }
+  }
+  }
+}
